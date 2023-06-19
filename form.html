@@ -7,7 +7,45 @@
   </head>
   <body>
     <form>
-      <input type="text" name="name" value="username" />
+      <label for="name" style="font-size: 1.3rem; font-family: sans-serif"
+        >Username:</label
+      >
+      <input type="text" name="name" value="" placeholder="username" />
+      <br />
+      <label for="pass" style="font-size: 1.3rem; font-family: sans-serif"
+        >password:</label
+      >
+      <input
+        type="password"
+        name="pass"
+        value=""
+        placeholder="passowrd"
+      /><br />
+      <input type="radio" id="male" />
+      <label for="male">Male</label> <br />
+      <input type="radio" id="female" />
+      <label for="female">Female</label> <br />
+      <label for="married">Unmarried</label>
+      <input type="checkbox" id="married" /><br />
+      <label for="married">Married</label>
+      <input type="checkbox" id="unmarried" /><br />
+      <label for="married"></label>
+
+      <br />
+
+      <label for="txtarea">Write something</label> <br />
+
+      <textarea name="txtarea" id="" cols="30" rows="10"></textarea>
+
+      <br />
+      <label for="country"></label>
+      <select name="" id="country">
+        <option value="Nepal">Nepal</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+      </select>
+      <input type="button" name="" value="Submit" />
     </form>
   </body>
 </html>
