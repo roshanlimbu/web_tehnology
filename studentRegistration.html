@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="font-family: sans-serif">
+    <h1 style="color: #ac24fa; text-align: center; text-decoration: underline">
+      STUDENT REGISTRATION FORM
+    </h1>
+    <form>
+      <div
+        style="
+          background-color: #ac24fa;
+          width: 70%;
+          margin: 0 auto;
+          color: #fff;
+          padding: 1.5rem;
+        "
+      >
+        <!-- First Name input -->
+        <label for="first_name" style="display: inline-block; width: 150px"
+          >FIRST NAME</label
+        >
+        <input
+          type="text"
+          name="firstName"
+          id="first_name"
+          maxlength="30"
+          pattern="^[a-zA-Z]"
+        />
+        <p style="display: inline">(max 30 characters a-z and A-Z)</p>
+        <br />
+        <br />
+        <!-- Last Name input -->
+        <label for="first_name" style="display: inline-block; width: 150px"
+          >LAST NAME</label
+        >
+        <input
+          type="text"
+          name="first name"
+          id="first_name"
+          maxlength="30"
+          pattern="^[a-zA-Z]"
+        />
+        <p style="display: inline">(max 30 characters a-z and A-Z)</p>
+        <br />
+        <br />
+        <label for="dateOfBirth" style="display: inline-block; width: 150px"
+          >DATE OF BIRTH</label
+        >
+        <select name="days" id="dateOfBirth" style="width: 50px">
+          <option value="Day" selected>Day</option>
+          <option value="Sunday">Sunday</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+        </select>
+        <select name="Month" id="month" style="width: 70px">
+          <option value="Month" selected>Month</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <select name="year" id="year" style="width: 60px">
+          <option value="Year" selected>Year</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+        </select>
+        <br />
+        <br />
+        <label for="email" style="display: inline-block; width: 150px"
+          >EMAIL ID</label
+        >
+        <input type="email" id="email" />
+        <br />
+        <br />
+        <label for="mobile_number" style="display: inline-block; width: 150px"
+          >MOBILE NUMBER</label
+        >
+        <input type="text" id="mobile_number" pattern="[1-9]{1}[0-9]{9}" />
+        <p style="display: inline">(10 digit number)</p>
+        <br />
+        <br />
+        <label for="gender" style="display: inline-block; width: 150px"
+          >GENDER</label
+        >
+        <label for="male">Male</label>
+        <input type="radio" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" />
+        <br />
+        <br />
+        <label for="address" style="float: left; width: 150px">ADDRESS</label>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+        <br />
+        <br />
+        <label for="city" style="display: inline-block; width: 150px"
+          >CITY</label
+        >
+        <input
+          type="text"
+          name="city"
+          id="city"
+          maxlength="30"
+          pattern="^[a-zA-Z]"
+        />
+        <p style="display: inline">(max 30 characters a-z and A-Z)</p>
+        <br />
+        <br />
+        <label for="pincode" style="display: inline-block; width: 150px"
+          >PIN CODE</label
+        >
+        <input type="number" maxlength="6" />
+        <p style="display: inline">(6 digit number)</p>
+        <br />
+        <br />
+        <label for="state" style="display: inline-block; width: 150px"
+          >STATE</label
+        >
+        <input
+          type="text"
+          name="state"
+          id="state"
+          maxlength="30"
+          pattern="^[a-zA-Z]"
+        />
+        <p style="display: inline">(max 30 characters a-z and A-Z)</p>
+        <br />
+        <br />
+        <label for="country" style="display: inline-block; width: 150px"
+          >COUNTRY</label
+        >
+        <input type="text" placeholder="NEPAL" />
+        <br />
+        <br />
+        <label for="hobbies" style="display: inline-block; width: 150px"
+          >HOBBIES</label
+        >
+        <label for="drawing">Drawing</label>
+        <input type="checkbox" id="drawing" />
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="singing" />
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="dancing" />
+        <label for="sketching">Sketching</label>
+        <input type="checkbox" id="sketching" />
+        <br />
+        <div style="padding-left: 9.5rem">
+          <label for="others">Others</label>
+          <input type="checkbox" id="others" />
+          <input type="text" name="" value="" />
+        </div>
+        <br />
+        <br />
+        <label for="qualification" style="width: 150px; float: left"
+          >QUALIFICATION</label
+        >
+        <table style="display: inline-block; border-spacing: 0.8rem 0">
+          <tr>
+            <th>SI.No.Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+          </tr>
+          <tr>
+            <td><strong>1</strong> Class X</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><strong>2</strong> Class XII</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><strong>3</strong> Graduation</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><strong>4</strong> Masters</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>(10 char max)</td>
+            <td>(upto 2 decimal)</td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <label for="courses" style="width: 150px; display: inline-block"
+          >COURSES APPLIED FOR</label
+        >
+        <label for="bca">BCA</label>
+        <input type="radio" id="bca" />
+        <label for="bcom">B.Com</label>
+        <input type="radio" id="bcom" />
+        <label for="ba">B.A</label>
+        <input type="radio" id="ba" />
+        <br />
+        <br />
+        <div style="text-align: center;">
+          <input type="submit" />
+          <input type="reset" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
