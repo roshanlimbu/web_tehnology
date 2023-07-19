@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>CSS</title>
+<!-- // external css  //-->
+<link href="css/style.css" rel="stylesheet">
+<!-- internal css -->
+<style>
+.container{
+display: flex;
+         justify-content: space-between;
+padding: 0 1.5rem;
+         align-items: center;
+height: 50px;
+}
+ul{
+display: flex;
+width: 50%;
+       justify-content: space-evenly;
+}
+.nav-links:hover{
+transition: color .3s ease;
+color: orange;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- inline css -->
+<a style="color: orange; font-weight: bold; font-size: 1.2rem;" href="./css1.html">Logo</a> 
+<ul>
+<li><a class="nav-links" href="#">Home</a>
+<li><a class="nav-links" href="#">Services</a>
+<li><a class="nav-links" href="#">Contact Us</a>
+</li>
+</ul>
+</div>
+</body>
+</html> 
