@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./style/resets.css" rel="stylesheet">
     <link href="./style/style.css" rel="stylesheet">
+    <link rel="icon" type="img/x-icon" href="./assets/favicon.ico">
   </head>
   <body>
     <div class="main-container">
@@ -13,12 +14,22 @@
         <nav class="nav-container">
           <a href="index.html">Movie<span>On</span></a> 
           <div class="nav-link_container">
-            <ul class="nav-items active">
+            <ul class="nav-items desktop-nav">
               <li><a class="nav-links" href="#">Home</a></li>
               <li><a class="nav-links" href="./watch.html">Watch</a></li>
               <li><a class="nav-links" href="./pricing.html">Pricing</a></li>
               <li><a class="cta " href="./signin.html">Sign in</a></li>
             </ul>
+          </div>
+          <div class="mobile-nav">
+            <input type="checkbox" class="menu" id="side-menu">
+            <label class="hamburger" for="side-menu"><span class="hamburger-menu"></span></label>
+            <ul class="dropdown">
+              <li><a class="nav-links" href="./index.html">Home</a></li>
+              <li><a class="nav-links" href="./watch.html">Watch</a></li>
+              <li><a class="nav-links" href="./pricing.html">Pricing</a></li>
+              <li><a class="cta" href="./signin.html">Signin</a></li>
+            </ul> 
           </div>
         </nav> 
         <!-- hero section  -->
@@ -34,7 +45,7 @@
       <!-- End of header -->
       <footer class="footer-container">
         <div>
-        <a class="footer-home-link" href="./index.html">movieOn</a>
+          <a class="footer-home-link" href="./index.html">movieOn</a>
         </div>
         <ul class="footer-item">
           <li><a class="footer-links" href="./signin.html">Account</a></li>
