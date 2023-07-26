@@ -79,15 +79,54 @@ span{
 .hero-text-container h3{
   padding: 0 0 2rem 0;
 }
-/* responsive  */
 
+/* footer */
+footer{
+  background-color: var(--dark-bg);
+}
+footer ul li , footer ul li a{
+  color: var(--text-light);
+}
+.footer-home-link{
+  color: var(--text-light);
+}
+.footer-home-link:hover{
+  color: var(--highlight-color-light);
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 15%;
+  color: var(--text-light);
+}
+.footer-item li{
+  padding: 0.5rem 0;
+}
+.footer-links{
+  position :relative;
+  transition: all .3s ease-in;
+  
+}
+.footer-links::after{
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: var(--highlight-color-dark);
+  bottom: -5px;
+  left: 0;
+}
+.footer-links:hover{
+  color: var(--highlight-color-light);
+}
+/* responsive  */
 @media screen and (max-width: 768px){
   .active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-  }
+    z-index: 9  }
   .active li{
     padding: 1rem 0;
   }
