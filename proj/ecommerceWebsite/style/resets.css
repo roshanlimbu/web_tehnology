@@ -1,0 +1,25 @@
+:root{
+  --main-bg-primary:#4A55A2;
+  --main-bg-secondary:#7895CB;
+  --main-bg-light0:#A0BFE0;
+  --text-primary:#393646;
+  --text-light: #F4EEE0;
+  --highlight-color-dark: #D21312;
+  --highlight-color-light: #ED2B2A;
+}
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+  color: var(--text-primary);
+  outline: none;
+  border: none;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+
