@@ -41,10 +41,6 @@ span{
   width: 100%;
   transition: all .5s ease;
 }
-
-
-
-
 .cta{
   background-color: var(--highlight-color-light) ;
   color: var(--text-light);
@@ -56,8 +52,33 @@ span{
 .cta:hover{
   background-color: var(--highlight-color-dark);
 }
-
-
+.hero-img{
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/hero-img.jpg) no-repeat left;
+  background-size: cover;
+  position: relative;
+}
+.hero-img::after{
+  content: '';
+  position: absolute;
+  background-color:var(--dark-bg) ;
+  width: inherit;
+  height: inherit;
+  opacity: .6;
+}
+.hero-text-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-text-container h1, h3{
+  color: var(--text-light);
+}
+.hero-text-container h3{
+  padding: 0 0 2rem 0;
+}
 /* responsive  */
 
 @media screen and (max-width: 768px){
