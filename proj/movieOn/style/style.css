@@ -91,6 +91,7 @@ footer ul li , footer ul li a{
   color: var(--text-light);
 }
 .footer-home-link:hover{
+  transition: all .5s ease-in;
   color: var(--highlight-color-light);
 }
 .footer-container{
@@ -111,10 +112,14 @@ footer ul li , footer ul li a{
   content: '';
   position: absolute;
   height: 5px;
-  width: 100%;
+  width: 0%;
   background-color: var(--highlight-color-dark);
   bottom: -5px;
   left: 0;
+}
+.footer-links:hover::after{
+    width: 100%;
+  transition: all .5s ease-in;
 }
 .footer-links:hover{
   color: var(--highlight-color-light);
