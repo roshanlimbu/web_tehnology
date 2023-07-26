@@ -61,21 +61,22 @@ span{
 /* responsive  */
 
 @media screen and (max-width: 768px){
-  .nav-items{
-    visibility: hidden;
+  .active{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
   }
-  /* .active{ */
-  /*   display: flex; */
-  /*   visibility:visible; */
-  /*   flex-direction: column; */
-  /*   align-items: start; */
-  /* } */
-/* nav{ */
-/*   display: flex; */
-/*   justify-content: space-between; */
-
-/*   padding: 0 5%; */
-/*   align-items: center; */
-/*   height: 50px; */
-/* } */
+  .active li{
+    padding: 1rem 0;
+  }
+  nav{
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: center;
+    height: 50px;
+  }
+  .logo{
+    align-items: flex-start;
+  }
 }
