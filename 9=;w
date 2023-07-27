@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MovieOn</title>
+    <title>pricing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./style/resets.css" rel="stylesheet">
-    <link href="./style/style.css" rel="stylesheet">
-    <link rel="icon" type="img/x-icon" href="./assets/favicon.ico">
+    <link href="./style/pricing.css" rel="stylesheet">
   </head>
   <body>
-    <div class="main-container">
       <header>
         <nav class="nav-container">
           <a href="index.html">Movie<span>On</span></a> 
@@ -17,7 +14,7 @@
             <ul class="nav-items desktop-nav">
               <li><a class="nav-links" href="#">Home</a></li>
               <li><a class="nav-links" href="./watch.html">Watch</a></li>
-              <li><a class="nav-links" target="_blank" href="./pricing.html">Pricing</a></li>
+              <li><a class="nav-links" href="./pricing.html">Pricing</a></li>
               <li><a class="cta " href="./signin.html">Sign in</a></li>
             </ul>
           </div>
@@ -34,15 +31,13 @@
             </ul> 
           </div>
         </nav> 
-        <!-- hero section  -->
-        <div class="hero-container">
-          <div class="hero-img"> </div> 
-          <div class="hero-text-container">
-            <h1>Watch Unlimited movies, TV shows, and more</h1>
-            <h3>Wacth anywhere, anytime.</h3>
-            <a class="cta" href="./watch.html">Explore</a>
-          </div>
-        </div>
+        <!-- main section  -->
+<div class="card-container">
+  
+</div>
+
+
+
       </header>
       <!-- End of header -->
       <footer class="footer-container">
@@ -57,6 +52,5 @@
           <li>&copy MovieOn, 2023 </li>
         </ul> 
       </footer>
-    </div> 
   </body>
 </html>
