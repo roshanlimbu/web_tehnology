@@ -10,6 +10,12 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--text-light);
+  opacity: .9;
 }
 .nav-items{
   display: flex;
@@ -25,7 +31,7 @@ span{
   transition: all .3s ease-in;
 }
 .nav-links:hover{
-  color: red;
+  color: var(--highlight-color-dark);
 }
 .nav-links::after{
   content: '';
@@ -127,6 +133,8 @@ footer ul li , footer ul li a{
 .mobile-nav{
   height: 50px;
   display: none;
+  position: -webkit-sticky;
+  top: 0;
 }
 .hamburger{
   cursor: pointer;
