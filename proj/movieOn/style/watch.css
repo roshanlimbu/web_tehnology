@@ -104,7 +104,9 @@ span{
   background-color: var(--text-light);
   border-radius: 10px;
 }
-
+video{
+  width: 300px;
+}
 /* footer */
 /* footer{ */
 /*   height: 100vh; */
