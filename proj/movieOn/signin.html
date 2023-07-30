@@ -4,9 +4,30 @@
     <title>Sign in</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
   </head>
   <body>
-  
+        <nav class="nav-container">
+          <a href="index.html">Movie<span>On</span></a> 
+          <div class="nav-link_container">
+            <ul class="nav-items desktop-nav">
+              <li><a class="nav-links" href="#">Home</a></li>
+              <li><a class="nav-links" target="_blank" href="./watch.html">Watch</a></li>
+              <li><a class="nav-links" target="_blank" href="./recommendataion.html">TV Shows</a></li>
+              <li><a class="cta " href="./signin.html">Sign in</a></li>
+            </ul>
+          </div>
+          <div class="mobile-nav">
+            <input type="checkbox" class="menu" id="side-menu">
+            <label class="hamburger" for="side-menu">
+              <span class="hamburger-menu-bar"></span>
+            </label>
+            <ul class="dropdown">
+              <li><a class="nav-links" href="./index.html">Home</a></li>
+              <li><a class="nav-links" href="./watch.html">Watch</a></li>
+              <li><a class="cta" href="./signin.html">Signin</a></li>
+            </ul> 
+          </div>
+        </nav> 
   </body>
 </html>
