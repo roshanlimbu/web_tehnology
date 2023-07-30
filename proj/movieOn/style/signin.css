@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import './resets.css';
+body{
+  font-family: 'poppins', sans-serif, Roboto , -apple-system;
+  letter-spacing: 2.5px;
+}
+nav{
+  display: flex;
+  padding: 0 5%;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--text-light);
+  opacity: .9;
+}
+.nav-items{
+  display: flex;
+}
+.nav-items li{
+  padding: 0 2rem;
+}
+span{
+  color:var(--highlight-color-light);
+}
+.nav-links{
+  position :relative;
+  transition: all .3s ease-in;
+}
+.nav-links:hover{
+  color: var(--highlight-color-dark);
+}
+.nav-links::after{
+  content: '';
+  height: 5px;
+  background-color: var(--highlight-color-light);
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.nav-links:hover::after{
+  width: 100%;
+  transition: all .5s ease;
+}
+.cta{
+  background-color: var(--highlight-color-light) ;
+  color: var(--text-light);
+  padding: .5rem 1rem;
+  border-radius:4px ;
+  transition: all .5s ease;
+}
+
+.cta:hover{
+  background-color: var(--highlight-color-dark);
+}
