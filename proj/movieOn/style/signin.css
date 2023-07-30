@@ -121,6 +121,17 @@ span{
   height: 100vh;
 }
 
+.card-container{
+  background-color: var(--text-light);
+  width: 400px;
+  height:300px;
+  margin: 5% auto;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 
 
 
