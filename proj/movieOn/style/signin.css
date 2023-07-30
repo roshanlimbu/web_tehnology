@@ -58,3 +58,94 @@ span{
 .cta:hover{
   background-color: var(--highlight-color-dark);
 }
+.mobile-nav{
+  height: 50px;
+  display: none;
+  position: -webkit-sticky;
+  top: 0;
+}
+.hamburger{
+  cursor: pointer;
+}
+
+.dropdown {
+  background-color: var(--dark-bg);
+  padding: 1em 0;
+  position: absolute;   
+  display: none;
+  border-radius: 8px;
+  top: 50px;
+  width: 40%;
+  right: 0;
+  z-index: 9;
+}
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: left;
+}
+.dropdown li a {
+ color: var(--text-light);
+}
+.hamburger-menu-bar{
+  position: relative;
+  background: var(--dark-bg);
+  display: block;
+  height: 3px;
+  margin: 0 auto;
+  bottom: 20%;
+}
+
+.hamburger-menu-bar::before,
+.hamburger-menu-bar::after{
+    background: var(--dark-bg);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamburger-menu-bar::before{
+  /* bottom: 25px; */
+  top: 5px;
+}
+.hamburger-menu-bar::after{
+  /* top: -35px; */
+  top: -5px;
+}
+/* responsive  */
+@media screen and (max-width: 768px){
+  .nav-link_container{
+    visibility: hidden;
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+    padding: 0 1.5rem;
+  }
+  .menu{
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .dropdown{
+    display: block;
+  }
+  /* .hamburger-menu-bar{ */
+  /*   background: transparent; */
+  /* } */
+  .menu:checked ~ .hamburger .hamburger-menu-bar{
+    background: transparent;
+  }
+  .menu:checked ~ .hamburger .hamburger-menu-bar::before{
+    transform: rotate(-45deg);
+    top:0px;
+  }
+  .menu:checked ~ .hamburger .hamburger-menu-bar::after{
+    transform: rotate(45deg);
+    top:0;
+  }
+}
+
+
