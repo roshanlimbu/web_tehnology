@@ -50,7 +50,6 @@ span{
 .cta{
     background-color: var(--highlight-color-light) ;
     color: var(--text-light);
-    margin-top: 1rem;
     padding: .5rem 1rem;
     border-radius:4px ;
     transition: all .5s ease;
@@ -128,7 +127,7 @@ span{
     margin: 0 auto;
     margin-top: 10%;
     filter: drop-shadow(5px 5px 10px #000);
-    width: 250px;
+    width: 300px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -136,6 +135,16 @@ span{
     border-radius: 10px;
 }
 
+form input[type=text], input[type=password]{
+    height: 15px;
+    padding: 12px 4px;
+    margin:8px 0;
+    box-sizing: border-box;
+}
+
+.card-continer img{
+    width: 50px;
+}
 
 /* responsive  */
 @media screen and (max-width: 768px){
