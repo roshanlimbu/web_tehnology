@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studentrecord>
+  <students>
+    <name>Roshan</name>
+    <age>21</age>
+    </students>
+  <students>
+    <name>Ashish</name>
+    <age>21</age>
+    </students>
+  <students>
+    <name>Bishnu</name>
+    <age>30</age>
+    </students>
+  <students>
+    <name>Ankit</name>
+    <age>10</age>
+    </students>
+  </studentrecord>
+
