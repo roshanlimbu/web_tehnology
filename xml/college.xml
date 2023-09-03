@@ -1,13 +1,13 @@
 <college>
-    <student>
-<firstname>Roshan</firstname>
-<lastname>Limbu</lastname>
-<contact>98111212</contact>
-<email>email@email</email>
-<address>
-<city>Itahari</city>
-<state>Province 1</state>
-<pin>56600</pin>
-</address>
-</student>
-</college>
+  <student>
+    <firstname>Roshan</firstname>
+  <lastname>Limbu</lastname>
+    <contact>98111212</contact>
+    <email>email@email</email>
+    <address>
+      <city>Itahari</city>
+      <state>Province 1</state>
+      <pin>56600</pin>
+      </address>
+    </student>
+  </college>
