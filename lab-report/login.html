@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign in</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    *::before, ::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: sans-serif;
+      background-color: royalblue;
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+    span a{
+      color: greenyellow;
+    }
+
+    .login-card-container{
+      display: flex;
+      width: 400px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    input{
+      height: 2rem;
+      width: 300px;
+      margin: 1rem 0;
+      background-color: lightcyan;
+      border-radius: 4px;
+      outline: none;
+    }
+    input::placeholder{
+      padding-left: .5rem;
+      font-size: 1rem;
+    }
+
+    form button{
+      background-color: green;
+      outline: none;
+      border: none;
+      padding: .5rem 3rem;
+
+      border-radius: 4px;
+    }
+    span{
+      margin-top:1rem ;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="login-card-container">
+        <h1>Login Form</h1>
+
+        <form>
+          <input type="text" placeholder="User Name"><br>
+          <input type="password" placeholder="Password"><br>
+          <button type="submit" class="btn">Sign in</button>
+        </form>
+        <span>Forget your password <a href="#">Click here</a></span>
+
+      </div> 
+    </div>  
+  </body>
+</html>
