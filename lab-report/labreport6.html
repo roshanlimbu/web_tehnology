@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address</legend>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br>
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+        <label for="course">Select a Course:</label>
+        <select id="course" name="course" required>
+          <option value="computer_science">Computer Science</option>
+          <option value="biology">Biology</option>
+          <option value="mathematics">Mathematics</option>
+          <option value="history">History</option>
+        </select><br>
+
+        <label>Choose Your Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests[]" value="coding">
+        <label for="coding">Coding</label><br>
+
+        <input type="checkbox" id="reading" name="interests[]" value="reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="sports" name="interests[]" value="sports">
+        <label for="sports">Sports</label><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
