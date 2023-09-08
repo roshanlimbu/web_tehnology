@@ -1,0 +1,55 @@
+<!DOCTYPE Bank [
+<!ELEMENT Bank (Customer*, Account*, Employee*)>
+
+<!ELEMENT Customer (CustomerID, FirstName, LastName, Address, Account*)>
+<!ELEMENT CustomerID (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+
+<!ELEMENT Account (AccountID, BranchID, CustomerID, AccountType, Balance)>
+<!ELEMENT AccountID (#PCDATA)>
+<!ELEMENT BranchID (#PCDATA)>
+<!ELEMENT AccountType (#PCDATA)>
+<!ELEMENT Balance (#PCDATA)>
+
+<!ELEMENT Employee (EmployeeID, EmployeeFirstName, EmployeeLastName, Designation, DOJ, Salary, Address)>
+<!ELEMENT EmployeeID (#PCDATA)>
+<!ELEMENT EmployeeFirstName (#PCDATA)>
+<!ELEMENT EmployeeLastName (#PCDATA)>
+<!ELEMENT Designation (#PCDATA)>
+<!ELEMENT DOJ (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+]>
+<Bank>
+  <Customer>
+    <CustomerID>1</CustomerID>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <Address>Khorsane</Address>
+    <Account>
+      <AccountID>101</AccountID>
+      <BranchID>1</BranchID>
+      <CustomerID>1</CustomerID>
+      <AccountType>Savings</AccountType>
+      <Balance>5000.00</Balance>
+    </Account>
+  </Customer>
+  <Account>
+    <AccountID>102</AccountID>
+    <BranchID>2</BranchID>
+    <CustomerID>1</CustomerID>
+    <AccountType>Checking</AccountType>
+    <Balance>2500.00</Balance>
+  </Account>
+  <Employee>
+    <EmployeeID>1001</EmployeeID>
+    <EmployeeFirstName>Januka</EmployeeFirstName>
+    <EmployeeLastName>Dhakal</EmployeeLastName>
+    <Designation>Manager</Designation>
+    <DOJ>2023-01-15</DOJ>
+    <Salary>60000.00</Salary>
+    <Address>Biratchowk</Address>
+  </Employee>
+</Bank>
+

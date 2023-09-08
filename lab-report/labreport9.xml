@@ -1,0 +1,14 @@
+<customers>
+  <customer>
+    <customerId>1111</customerId>
+    <customerName>Bishnu Limbu</customerName>
+  </customer>
+  <customer>
+    <customerId>1112</customerId>
+    <customerName>Ashish Khadka</customerName>
+  </customer>
+  <customer>
+    <customerId>1113</customerId>
+    <customerName>Bishal Koirala</customerName>
+  </customer>
+</customers>
