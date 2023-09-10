@@ -1,0 +1,27 @@
+<!DOCTYPE TVSCHEDULE [
+<!ELEMENT TVSCHEDULE (Channel+)>
+<!ATTLIST TVSCHEDULE
+Name CDATA #REQUIRED>
+
+<!ELEMENT Channel (banner, name, day+)>
+
+<!ATTLIST Channel
+Chan CDATA #REQUIRED>
+
+<!ELEMENT Banner (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Day (data, (holiday|programslot)*)>
+<!ELEMENT Data (#PCDATA)>
+<!ELEMENT Holiday (#PCDATA)>
+
+<!ELEMENT Programslot (Time, Title, Description)>
+<!ATTLIST Programslot
+Vtr CDATA #IMPLIED>
+<!ELEMENT Time (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ATTLIST Title
+Rating CDATA #IMPLIED
+Language CDATA #IMPLIED>
+<!ELEMENT Description (#PCDATA)>
+]>
+
