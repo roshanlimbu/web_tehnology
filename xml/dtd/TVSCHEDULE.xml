@@ -4,12 +4,12 @@
     <Day>
       <date>2023-04-10</date>
       <programslot Vtr="12345">
-        <Time>08:00 AM</Time>
+        <Time>12:00 PM</Time>
         <Title Rating="PG" Language="English">Man vs wild</Title>
         <Description>Man vs wild</Description>
       </programslot>
       <programslot>
-        <Time>10:00 AM</Time>
+        <Time>2:00 PM</Time>
         <Title Rating="G">How it's made?</Title>
       </programslot>
     </Day>
