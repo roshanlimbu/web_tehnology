@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE TVSCHEDULE [
 <!ELEMENT TVSCHEDULE (Channel+)>
 
@@ -5,9 +6,8 @@
 
 
 <!ELEMENT Banner (#PCDATA)>
-<!ELEMENT Name (#PCDATA)>
 <!ELEMENT Day (data, (holiday|programslot)+)><!--  * here if the question had asked zero or more occurence -->
-<!ELEMENT Data (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
 <!ELEMENT Holiday (#PCDATA)>
 
 <!ELEMENT Programslot (Time, Title, Description?)>
@@ -30,4 +30,69 @@ Language CDATA #IMPLIED>
 
 ]>
 
+<TVSCHEDULE Name="Daily program">
+    <Channel Chan="Discovery">
+        <Banner>Man vs Wild</Banner>
+
+        <Day>
+            <Date>Monday</Date>
+            <Programslot Vtr="123">
+                <Time>08:00 AM</Time>
+                <Title>Morning Show</Title>
+                <Description>This is man vs wild by bear grylls.</Description>
+            </Programslot>
+            <Holiday>Christmas holiday</Holiday>
+            <Programslot Vtr="67890">
+                <Time>12:00 PM</Time>
+                <Title>Lunchtime News</Title>
+            </Programslot>
+        </Day>
+
+        <Day>
+            <Date>Tuesday</Date>
+            <Programslot Vtr="12345">
+                <Time>07:30 AM</Time>
+                <Title>Breaking Bad</Title>
+                <Description>Breaking bad with chemistry.</Description>
+            </Programslot>
+            <Programslot Vtr="6789">
+                <Time>01:00 PM</Time>
+                <Title>How it is made?</Title>
+                <Description>How is skateboard made?</Description>
+            </Programslot>
+        </Day>
+
+    </Channel>
+
+    <Channel Chan="nick">
+        <Banner>Doraemon</Banner>
+
+        <Day>
+            <Date>Sunday</Date>
+            <Programslot Vtr="13">
+                <Time>08:00 AM</Time>
+                <Title>Morning cartoon Show</Title>
+                <Description>Doraemon cartoon.</Description>
+            </Programslot>
+
+            <Programslot Vtr="67">
+                <Time>12:00 PM</Time>
+                <Title>Motu Patlu</Title>
+            </Programslot>
+        </Day>
+
+        <Day>
+            <Date>Tuesday</Date>
+            <Programslot Vtr="125">
+                <Time>07:30 AM</Time>
+                <Title>Ninja Hattori</Title>
+                <Description>Ninja Hattori show.</Description>
+            </Programslot>
+        </Day>
+
+    </Channel>
+
+
+
+</TVSCHEDULE>
 
