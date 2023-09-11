@@ -1,27 +1,32 @@
 <!DOCTYPE TVSCHEDULE [
 <!ELEMENT TVSCHEDULE (Channel+)>
-<!ATTLIST TVSCHEDULE
-Name CDATA #REQUIRED>
 
 <!ELEMENT Channel (banner, name, day+)>
+
+
+<!ELEMENT Banner (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Day (data, (holiday|programslot)+)><!--  * here if the question had asked zero or more occurence -->
+<!ELEMENT Data (#PCDATA)>
+<!ELEMENT Holiday (#PCDATA)>
+
+<!ELEMENT Programslot (Time, Title, Description?)>
+<!ELEMENT Time (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ATTLIST TVSCHEDULE
+Name CDATA #REQUIRED>
 
 <!ATTLIST Channel
 Chan CDATA #REQUIRED>
 
-<!ELEMENT Banner (#PCDATA)>
-<!ELEMENT Name (#PCDATA)>
-<!ELEMENT Day (data, (holiday|programslot)*)>
-<!ELEMENT Data (#PCDATA)>
-<!ELEMENT Holiday (#PCDATA)>
-
-<!ELEMENT Programslot (Time, Title, Description)>
 <!ATTLIST Programslot
 Vtr CDATA #IMPLIED>
-<!ELEMENT Time (#PCDATA)>
-<!ELEMENT Title (#PCDATA)>
+
 <!ATTLIST Title
 Rating CDATA #IMPLIED
 Language CDATA #IMPLIED>
-<!ELEMENT Description (#PCDATA)>
+
 ]>
 
