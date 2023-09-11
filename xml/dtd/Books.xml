@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE Books [
+<!ELEMENT Books (Book+)>
+
+<!ELEMENT Book (Title?, Isbn+, (Zipcode | Author), Publish*)>
+
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Isbn (#PCDATA)>
+<!ELEMENT Zipcode (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Publish (#PCDATA)>
+<!ATTLIST Title
+Name CDATA #IMPLIED>
+
+<!ATTLIST Isbn No CDATA #REQUIRED>
+
+<!ATTLIST Zipcode Zname CDATA #FIXED "232232323">
+
+<!ATTLIST Publish Year CDATA #FIXED "1995">
+]>
+
+
 <Books>
-    <book>
-        <title name="Book Title">Record of Ren Zu</title>
-        <isbn no="123"/>
-        <Zipcode Zname="56600">12345</Zipcode>
-        <publish year="2000">Daolord</publish>
-    </book>
-    <book>
-        <isbn no="1234"/>
-        <author>Roshan Limbu</author>
-        <publish year="2023">World's best publisher.</publish>
-    </book>
+  <Book>
+    <Title>Harry potter</Title>
+    <Isbn No="123">123</Isbn>
+    <Author>J.K Rowling</Author>
+    <Publish>W.B</Publish>
+    <Publish>Disney</Publish>
+  </Book>
 </Books>

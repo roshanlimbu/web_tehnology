@@ -1,5 +1,5 @@
 <!ELEMENT Books (book+)>
-<!ELEMENT book (title?, (isbn+, (Zipcode | author))), publish*)>
+<!ELEMENT book (title?, (isbn+, (Zipcode | author)), publish*)>
 <!ELEMENT title (#PCDATA)>
 <!ATTLIST title
     name CDATA #IMPLIED
