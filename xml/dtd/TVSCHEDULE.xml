@@ -1,31 +1,49 @@
-<TVSCHEDULE Name="WeeklyTVSchedule">
-  <channel Chan="Discovery">
-    <banner>Discovery Channel</banner>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TVSCHEDULE [
+<!ELEMENT TVSCHEDULE (Channel+)>
+
+<!ELEMENT Channel (Banner, Day+)>
+
+
+<!ELEMENT Banner (#PCDATA)>
+<!ELEMENT Day (Date, (Holiday|Programslot)+)><!--  * here if the question had asked zero or more occurence -->
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Holiday (#PCDATA)>
+
+<!ELEMENT Programslot (Time, Title, Description?)>
+<!ELEMENT Time (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ATTLIST TVSCHEDULE
+Name CDATA #REQUIRED>
+
+<!ATTLIST Channel
+Chan CDATA #REQUIRED>
+
+<!ATTLIST Programslot
+Vtr CDATA #IMPLIED>
+
+<!ATTLIST Title
+Rating CDATA #IMPLIED
+Language CDATA #IMPLIED>
+
+]>
+
+<TVSCHEDULE Name="Weekely show">
+  <Channel Chan="Discovery">
+    <Banner>This is my show.</Banner>
     <Day>
-      <date>2023-04-10</date>
-      <programslot Vtr="12345">
-        <Time>12:00 PM</Time>
-        <Title Rating="PG" Language="English">Man vs wild</Title>
-        <Description>Man vs wild</Description>
-      </programslot>
-      <programslot>
-        <Time>2:00 PM</Time>
-        <Title Rating="G">How it's made?</Title>
-      </programslot>
+      <Date>2022-12-25</Date>
+      <Holiday>Christms Holiday</Holiday>
     </Day>
     <Day>
-      <date>2023-12-24</date>
-      <holiday>Christmas Day</holiday>
+      <Date>2023-01-01</Date>
+      <Programslot Vtr="123">
+        <Time>07:30</Time>
+        <Title>Sunday Morninig News</Title>
+        <Description>Sunay Morning News</Description>
+      </Programslot>
     </Day>
-  </channel>
-  <channel Chan="nick">
-    <banner>Nikeledon</banner>
-    <Day>
-      <date>2023-09-10</date>
-      <programslot>
-        <Time>09:00 AM</Time>
-        <Title Language="hindi">Motu patlu</Title>
-      </programslot>
-    </Day>
-  </channel>
+  </Channel>
 </TVSCHEDULE>
