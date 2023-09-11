@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Bank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Customer" type="CustomerType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Account" type="AccountType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Employee" type="EmployeeType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="CustomerType">
+    <xs:sequence>
+      <xs:element name="CustomerID" type="xs:int"/>
+      <xs:element name="FirstName" type="xs:string"/>
+      <xs:element name="LastName" type="xs:string"/>
+      <xs:element name="Address" type="xs:string"/>
+      <xs:element name="Account" type="AccountType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AccountType">
+    <xs:sequence>
+      <xs:element name="AccountID" type="xs:int"/>
+      <xs:element name="BranchID" type="xs:int"/>
+      <xs:element name="CustomerID" type="xs:int"/>
+      <xs:element name="AccountType" type="xs:string"/>
+      <xs:element name="Balance" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EmployeeType">
+    <xs:sequence>
+      <xs:element name="EmployeeID" type="xs:int"/>
+      <xs:element name="EmployeeFirstName" type="xs:string"/>
+      <xs:element name="EmployeeLastName" type="xs:string"/>
+      <xs:element name="Designation" type="xs:string"/>
+      <xs:element name="DOJ" type="xs:string"/>
+      <xs:element name="Salary" type="xs:decimal"/>
+      <xs:element name="Address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+
