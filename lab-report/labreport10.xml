@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE Bank [
 <!ELEMENT Bank (Customer*, Account*, Employee*)>
 
-<!ELEMENT Customer (CustomerID, FirstName, LastName, Address, Account*)>
+<!ELEMENT Customer (CustomerID, CustomerName, Address, Account*)>
 <!ELEMENT CustomerID (#PCDATA)>
-<!ELEMENT FirstName (#PCDATA)>
-<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT CustomerName (#PCDATA)>
 <!ELEMENT Address (#PCDATA)>
 
 <!ELEMENT Account (AccountID, BranchID, CustomerID, AccountType, Balance)>
@@ -13,10 +13,9 @@
 <!ELEMENT AccountType (#PCDATA)>
 <!ELEMENT Balance (#PCDATA)>
 
-<!ELEMENT Employee (EmployeeID, EmployeeFirstName, EmployeeLastName, Designation, DOJ, Salary, Address)>
+<!ELEMENT Employee (EmployeeID, EmployeeName,  Designation, DOJ, Salary, Address)>
 <!ELEMENT EmployeeID (#PCDATA)>
-<!ELEMENT EmployeeFirstName (#PCDATA)>
-<!ELEMENT EmployeeLastName (#PCDATA)>
+<!ELEMENT EmployeeName (#PCDATA)>
 <!ELEMENT Designation (#PCDATA)>
 <!ELEMENT DOJ (#PCDATA)>
 <!ELEMENT Salary (#PCDATA)>
@@ -24,9 +23,8 @@
 <Bank>
   <Customer>
     <CustomerID>1</CustomerID>
-    <FirstName>John</FirstName>
-    <LastName>Doe</LastName>
-    <Address>Khorsane</Address>
+    <CustomerName>Roshan</CustomerName>
+    <Address>Nepal</Address>
     <Account>
       <AccountID>101</AccountID>
       <BranchID>1</BranchID>
@@ -44,8 +42,7 @@
   </Account>
   <Employee>
     <EmployeeID>1001</EmployeeID>
-    <EmployeeFirstName>Januka</EmployeeFirstName>
-    <EmployeeLastName>Dhakal</EmployeeLastName>
+    <EmployeeName>Bishan</EmployeeName>
     <Designation>Manager</Designation>
     <DOJ>2023-01-15</DOJ>
     <Salary>60000.00</Salary>
