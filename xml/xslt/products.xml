@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="products.xsl" type="text/xsl"?>
+<catalog>
+  <products>
+    <product>
+      <productname>Noodles</productname>
+      <category>Instant food</category>
+      <price>20</price>
+      <quantity>100</quantity>
+    </product>
+
+    <product>
+      <productame>Biscuit</productame>
+      <category>Instant food</category>
+      <price>30</price>
+      <quantity>5</quantity>
+    </product>
+
+    <product>
+      <productname>Chocofun</productname>
+      <category>Chocoloates</category>
+      <price>5</price>
+      <quantity>50</quantity>
+    </product>
+
+    <product>
+      <productname>Choco pie</productname>
+      <category>Chocoloates </category>
+      <price>20</price>
+      <quantity>9</quantity>
+    </product>
+
+    <product>
+        <productname>Coke</productname>
+        <category>Beverages</category>
+        <price>160</price>
+        <quantity>100</quantity>
+      </product>
+    </products>
+  </catalog>
