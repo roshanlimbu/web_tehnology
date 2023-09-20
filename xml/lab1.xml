@@ -8,10 +8,10 @@
   <!ELEMENT phone (#PCDATA)>
   <!ELEMENT website (#PCDATA)>
   <!ENTITY % digits "[0-9]">
-  <!ENTITY % phoneNumber>
+  <!-- <!ENTITY % phoneNumber > -->
   <!ELEMENT phoneNumber (#PCDATA)>
   <!ATTLIST phoneNumber type (home|work|mobile) #IMPLIED>
-  <!ELEMENT phone (%phoneNumber;)>
+  <!-- <!ELEMENT phone (%phoneNumber;)> -->
 ]>
 <students>
   <student>
