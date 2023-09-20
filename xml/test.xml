@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="new.xsl" type="text/xsl"?>
+<catalog>
+  <person>
+    <user>
+      <fullName></fullName>
+      <address></address>
+      <post></post>
+      <salary></salary>
+      <email></email>
+    </user>
+    <user>
+      <fullName></fullName>
+      <address></address>
+      <post></post>
+      <salary></salary>
+      <email></email>
+    </user>
+    <user>
+      <fullName></fullName>
+      <address></address>
+      <post></post>
+      <salary></salary>
+      <email></email>
+    </user>
+    <user>
+      <fullName></fullName>
+      <address></address>
+      <post></post>
+      <salary></salary>
+      <email></email>
+    </user>
+    <user>
+      <fullName></fullName>
+      <address></address>
+      <post></post>
+      <salary></salary>
+      <email></email>
+    </user>
+  </person>
+</catalog>

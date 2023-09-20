@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./employee.xsl" type="text/xsl"?>
+<catalog>
+  <employee>
+    <name>Roshan Limbu</name>
+    <department>Director</department>
+    <jobTitle>Director</jobTitle>
+    <salary>500000</salary>
+    <email>roshan@limbu</email>
+  </employee>
+
+  <employee>
+    <name>Ashish Rai</name>
+    <department>HR</department>
+    <jobTitle>Manager</jobTitle>
+    <salary>25000</salary>
+    <email>ashish@rai</email>
+  </employee>
+
+  <employee>
+    <name>Lokesh Maharjan </name>
+    <department>Hr</department>
+    <jobTitle>Assistant</jobTitle>
+    <salary>15000</salary>
+    <email>Lokesh@maharjan</email>
+  </employee>
+
+  <employee>
+    <name>Biren Limbu</name>
+    <department>CEO</department>
+    <jobTitle>CEO</jobTitle>
+    <salary>60000</salary>
+    <email>biren@limbu</email>
+  </employee>
+</catalog>
