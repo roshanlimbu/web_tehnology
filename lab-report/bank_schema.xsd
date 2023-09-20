@@ -14,8 +14,7 @@
   <xs:complexType name="CustomerType">
     <xs:sequence>
       <xs:element name="CustomerID" type="xs:int"/>
-      <xs:element name="FirstName" type="xs:string"/>
-      <xs:element name="LastName" type="xs:string"/>
+      <xs:element name="Name" type="xs:string"/>
       <xs:element name="Address" type="xs:string"/>
       <xs:element name="Account" type="AccountType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
@@ -34,8 +33,7 @@
   <xs:complexType name="EmployeeType">
     <xs:sequence>
       <xs:element name="EmployeeID" type="xs:int"/>
-      <xs:element name="EmployeeFirstName" type="xs:string"/>
-      <xs:element name="EmployeeLastName" type="xs:string"/>
+      <xs:element name="EmployeeName" type="xs:string"/>
       <xs:element name="Designation" type="xs:string"/>
       <xs:element name="DOJ" type="xs:string"/>
       <xs:element name="Salary" type="xs:decimal"/>

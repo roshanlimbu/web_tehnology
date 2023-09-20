@@ -3,8 +3,7 @@
       xsi:noNamespaceSchemaLocation="bank_schema.xsd">
   <Customer>
     <CustomerID>1</CustomerID>
-    <FirstName>Roshan</FirstName>
-    <LastName>Limbu</LastName>
+    <Name>Roshan</Name>
     <Address>Lalvitti</Address>
     <Account>
       <AccountID>101</AccountID>
@@ -16,8 +15,7 @@
   </Customer>
   <Customer>
     <CustomerID>2</CustomerID>
-    <FirstName>Ashish</FirstName>
-    <LastName>Khadka</LastName>
+    <Name>Ashish</Name>
     <Address>Africa</Address>
     <Account>
       <AccountID>102</AccountID>
@@ -29,8 +27,7 @@
   </Customer>
   <Employee>
     <EmployeeID>1001</EmployeeID>
-    <EmployeeFirstName>Bishnu</EmployeeFirstName>
-    <EmployeeLastName>Limbu</EmployeeLastName>
+    <EmployeeName>Bishnu Limbu</EmployeeName>
     <Designation>Manager</Designation>
     <DOJ>2023-01-15</DOJ>
     <Salary>60000.00</Salary>
