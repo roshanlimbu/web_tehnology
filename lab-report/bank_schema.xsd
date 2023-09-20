@@ -22,7 +22,7 @@
 
   <xs:complexType name="AccountType">
     <xs:sequence>
-      <xs:element name="AccountID" type="xs:int"/>
+      <xs:element name="AccountID" type="xs:string"/>
       <xs:element name="BranchID" type="xs:int"/>
       <xs:element name="CustomerID" type="xs:int"/>
       <xs:element name="AccountType" type="xs:string"/>
