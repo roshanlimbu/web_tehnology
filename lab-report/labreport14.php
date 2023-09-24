@@ -8,7 +8,7 @@ $password = "";
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password);
 
-$sql = "CREATE DATABASE namna_college";
+$sql = "CREATE DATABASE namuna_college";
 query($sql);
 
 
